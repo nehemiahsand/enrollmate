@@ -1,0 +1,62 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: enrollmate-postgres
+    environment:
+      - POSTGRES_USER=enrollmate
+      - POSTGRES_PASSWORD=enrollmate_password
+      - POSTGRES_DB=enrollmate_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - enrollmate-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U enrollmate"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./enrollmate-backend
+      dockerfile: Dockerfile
+    container_name: enrollmate-backend
+    ports:
+      - "4000:4000"
+    environment:
+      - PORT=4000
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://enrollmate:enrollmate_password@postgres:5432/enrollmate_db
+      - JWT_SECRET=${JWT_SECRET:-your-secret-key-change-in-production}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - enrollmate-network
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./enrollmate-frontend
+      dockerfile: Dockerfile
+    container_name: enrollmate-frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:4000
+    depends_on:
+      - backend
+    networks:
+      - enrollmate-network
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+    driver: local
+
+networks:
+  enrollmate-network:
+    driver: bridge
