@@ -1,4 +1,4 @@
-# Enro## 📋 Table of Contents
+# EnrollMate# 📋 Table of Contents
 
 - [Quick Start](#-quick-start)
 - [Architecture Overview](#-architecture-overview)
@@ -9,7 +9,7 @@
 - [Database Access](#-database-access)
 - [Troubleshooting](#-troubleshooting)
 - [Tech Stack](#-tech-stack)
-- [Additional Documentation](#-additional-documentation)urse Enrollment System 🎓
+- [Additional Documentation](#-additional-documentation)
 
 A full-stack course enrollment management system with role-based access control for admins, instructors, and students. Built with React, Node.js/Express, and PostgreSQL, containerized with Docker for easy deployment.
 
