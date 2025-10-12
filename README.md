@@ -1,4 +1,4 @@
-# EnrollMate# 📋 Table of Contents
+# EnrollMate 📋 Table of Contents
 
 - [Quick Start](#-quick-start)
 - [Architecture Overview](#-architecture-overview)
