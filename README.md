@@ -733,24 +733,6 @@ docker-compose up -d backend frontend
 
 ---
 
-## 📖 Additional Documentation
-
-Comprehensive guides available in the repository:
-
-- **[SETUP_GUIDE.md](SETUP_GUIDE.md)** - Detailed setup instructions with troubleshooting
-- **[FEATURES_SUMMARY.md](FEATURES_SUMMARY.md)** - Complete feature documentation
-- **[REQUIREMENTS_COMPLIANCE.md](REQUIREMENTS_COMPLIANCE.md)** - Project requirements checklist
-- **[TESTING_GUIDE.md](TESTING_GUIDE.md)** - How to test all features
-- **[CHANGELOG.md](CHANGELOG.md)** - Version history and updates
-- **[UAB_COLOR_SCHEME.md](UAB_COLOR_SCHEME.md)** - UI design guidelines
-- **[WAITLIST_SYSTEM.md](WAITLIST_SYSTEM.md)** - Waitlist feature documentation
-- **[TIMETABLE_CONFLICTS.md](TIMETABLE_CONFLICTS.md)** - Schedule conflict detection
-- **[PROTECTED_ROUTES.md](PROTECTED_ROUTES.md)** - Route authorization
-- **[AUTH_CONTEXT.md](AUTH_CONTEXT.md)** - Authentication implementation
-- **[REUSABLE_COMPONENTS.md](REUSABLE_COMPONENTS.md)** - Component library
-
----
-
 ## 🎓 Testing Guide
 
 ### Quick Test Scenarios
@@ -842,4 +824,4 @@ This project is created for educational purposes as part of CS 468 - Software En
 
 **Made with ❤️ for CS 468 - Software Engineering**
 
-**Need Help?** Check the [troubleshooting section](#-troubleshooting) or consult [SETUP_GUIDE.md](SETUP_GUIDE.md)
+**Need Help?** Check the [troubleshooting section](#-troubleshooting)
