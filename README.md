@@ -15,20 +15,6 @@ A full-stack course enrollment management system with role-based access control 
 
 ---
 
-## � Table of Contents
-
-- [Quick Start](#-quick-start)
-- [Architecture Overview](#-architecture-overview)
-- [Test Accounts](#-test-accounts)
-- [Features](#-features-to-test)
-- [Useful Commands](#-useful-commands)
-- [Database Access](#-database-access)
-- [Troubleshooting](#-troubleshooting)
-- [Tech Stack](#-tech-stack)
-- [Additional Documentation](#-additional-documentation)
-
----
-
 ## 🚀 Quick Start
 
 ### Prerequisites
