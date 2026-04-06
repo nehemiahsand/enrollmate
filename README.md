@@ -56,11 +56,11 @@ EnrollMate uses a modern three-tier architecture with containerized microservice
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                         Client Layer                         │
+│                         Client Layer                        │
 │  ┌────────────────────────────────────────────────────┐     │
-│  │   React Frontend (Vite + Tailwind CSS)            │     │
+│  │   React Frontend (Vite + Tailwind CSS)             │     │
 │  │   - Component-based UI                             │     │
-│  │   - Context API for state management              │     │
+│  │   - Context API for state management               │     │
 │  │   - React Router for navigation                    │     │
 │  │   - Port: 5173                                     │     │
 │  └────────────────────────────────────────────────────┘     │
@@ -70,7 +70,7 @@ EnrollMate uses a modern three-tier architecture with containerized microservice
                               │ JWT Authentication
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                      Application Layer                       │
+│                      Application Layer                      │
 │  ┌────────────────────────────────────────────────────┐     │
 │  │   Node.js/Express Backend                          │     │
 │  │   - RESTful API endpoints                          │     │
@@ -85,7 +85,7 @@ EnrollMate uses a modern three-tier architecture with containerized microservice
                               │ PostgreSQL Protocol
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                        Data Layer                            │
+│                        Data Layer                           │
 │  ┌────────────────────────────────────────────────────┐     │
 │  │   PostgreSQL Database                              │     │
 │  │   - Users (students, instructors, admins)          │     │
